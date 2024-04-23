@@ -1,0 +1,243 @@
+          -----header full-width----- 
+
+//////////////////////////////////////////////////////////
+
+ /*start customize first banner*/
+ section:nth-of-type(1) .swiper-slide.swiper-slide-active{
+  width:100%;
+  padding:0;
+}
+section.s-block.s-block--photos-slider {
+    margin-top: 0;
+}
+/* end customize first banner*/
+
+--------------full-width in mobile --------------
+@media(max-width:767px){
+.swiper.s-slider-container.swiper-initialized.swiper-horizontal.swiper-rtl.swiper-backface-hidden{
+padding:0;
+}
+}
+
+
+//////////////////  background-image  ////////////////////////////
+
+/* start customize background-image*/
+body#app {
+    background-image: url(https://i.ibb.co/g60syCm/image.jpg);
+    background-size: cover;
+}
+/* end customize background-image*/
+
+
+
+
+
+
+
+/////////////////////////////  new  full-width  ///////////////////////
+
+
+/* start customize first banner*/
+section.s-block.s-block--photos-slider salla-slider.photos-slider .swiper-slide{
+width:100%;
+}
+section.s-block.s-block--photos-slider .carousel-slider .swiper-wrapper>div{
+padding:0 !important;
+}
+section:first-of-type.s-block.s-block--photos-slider{
+margin-top:0;
+}
+[dir=rtl] salla-slider.photos-slider .swiper {
+    padding-left: 0;
+}
+/* end customize first banner*/
+
+//////////////////////////////////////////////////////////////////////////////////
+
+/////////////   تعديلات الاقسام     ///////////////////
+
+
+/* start customize setion*/
+.md\:grid-cols-3 {
+    grid-template-columns: repeat(3,minmax(0,1fr));
+}
+.two-row .banner-entry:first-child {
+    grid-column: 1 / 1;
+    grid-row: 1 / 1;
+}
+a.banner-entry{
+    height: 405px;
+    background-color:unset;
+}
+section.s-block.s-block--banners.container .lazy__bg.lazy.entered.loaded{
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+@media(min-width:768px) and (max-width:1200px){
+a.banner-entry{
+    height: 225px;
+}
+}
+@media(max-width:767px){
+a.banner-entry{
+    height: 135px;
+}
+}
+
+/* end customize setion*/
+
+
+/////////////////////////////////////////////////////////////////////////////////
+
+
+///////////////// تعديلات البانرات ////////////////
+
+/* start customize banners*/
+
+section.s-block.s-block--fixed-banner.wide-placeholder .container{
+    padding: 0;
+    margin: 0;
+    max-width: 100%;
+}
+section.s-block.s-block--fixed-banner.wide-placeholder .banner--fixed img {
+    background-color: unset;
+}
+
+/* end customize banners*/
+
+
+
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+////////    تعديلات لون الكارد //////////////
+
+
+/* start customize card*/
+
+.s-product-card-content .s-button-primary-outline{
+    color: white;
+    background-color: var(--color-primary);
+}
+ .s-product-card-content .s-product-card-content-title a{
+    color: var(--color-primary);
+    text-align: center;
+    font-size:1rem;
+}
+ .s-product-card-content .s-product-card-price{
+    margin: auto;
+    color: #948ccd;
+    font-size:1.25rem;
+} 
+
+/* end customize card*/
+
+
+//////////////     تعديلات حجم صور القسم  ////////////
+
+.lazy__bg {
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: snow;
+}
+
+
+///////////////    full width for banners ////////////////////
+
+section:nth-of-type(2).s-block.s-block--fixed-banner.wide-placeholder .container {
+    margin: 0;
+    padding: 0;
+    max-width: 100%;
+}
+
+
+
+///////////////////// footer ////////////////////////////////
+
+
+/* start customize footer*/
+.footer-is-light .store-footer .store-footer__inner{
+    background-color: black;
+    color: white;
+    border: none;
+}
+.footer-is-light .store-footer{
+    background-color: black;
+}
+/* end customize footer*/
+
+
+
+
+
+/////////////////////////// flex ////////////////////////////////
+
+.grid.md\:grid-cols-3.two-row.grid-flow-row.gap-3.sm\:gap-8 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+a.banner-entry,.two-row .banner-entry:first-child  {
+    width: 30.3%;
+    height: 370px;
+    background-color: unset;
+}
+
+
+
+/////////////////// NEW MEDIA ////////////////////
+
+
+@media(min-width:768px) and (max-width:1200px){
+a.banner-entry{
+    height: 225px;
+}
+}
+
+
+
+
+
+
+
+///////////// اظهار المحتوي ///////////////////
+
+body.product-single .overflow-hidden {
+    overflow: visible;
+}
+body.product-single article.article {
+    max-height: 100% !important;
+}
+body.product-single .link--primary{
+display:none;
+}
+
+
+/////////////////////////////////////////صنع بحب /////////////////////////////////////////////////////
+
+const change = document.querySelector('footer.store-footer .justify-between .copyright-text p');
+change.textContent = 'صنع بحب في سمو';
+
+
+
+const change = document.querySelector('footer.store-footer .justify-between .text-gray-400');
+change.textContent = 'صنع بحب مع AZHAR';
+
+
+
+
+
+/* start customize banners*/
+/* end customize banners*/
+
+/* start customize section*/
+/* end customize section*/
+
+/* start customize card*/
+/* end customize card*/
+
+/* start customize footer*/
+/* end customize footer*/
