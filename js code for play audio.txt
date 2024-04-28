@@ -1,0 +1,102 @@
+/* Add custom Js code below */ 
+
+
+
+/*--------------- play the audio when i click button ------------------*/
+
+
+
+const getBody = document.querySelector('body');
+  function overlay() {
+    const removeDiv = document.querySelector('.sound');
+    removeDiv.remove();
+  }
+window.addEventListener('load', ()=>{
+const newDiv = 
+`
+<div class="sound">
+    <div class="overlay" onclick="overlay()">
+        <div class="sound-content">
+            <p>لتجربة أفضل، يرجى تفعيل إمكانية الوصول إلى الصوت</p>
+            <button id="play-sound" onclick="overlay()">تفعيل</button>
+        </div>
+    </div>
+</div>
+`;
+getBody.insertAdjacentHTML("afterbegin",newDiv);
+
+  const btnSound = document.getElementById('play-sound');
+  btnSound.addEventListener('click', function () {
+    playMusic();
+  });
+  
+  function playMusic() {
+    const audio = new Audio('https://www.naghma.mobi/uploads/songs/tkbyrat___mn_al7rm_almky_aly_mla.mp3');
+    audio.play();
+  }
+})
+
+
+/*---------css code ----------------*/
+
+.sound {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+.sound .overlay {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .4);
+    z-index: 9;
+    position: relative;
+}
+.sound-content {
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9;
+    background: #fff;
+    padding: 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.sound p {
+    color: #8d45cd;
+    margin-bottom: .8rem;
+}
+button#play-sound {
+    padding: 4px 10px 7px;
+    background-color: #fe6602;
+    border-radius: 20px;
+    color: #fff;
+}
+@media(max-width:767px){
+.sound-content{
+    width: 300px;
+}
+}
+
+
+
+////////////////////////////////////////////////////////////////////////////////////
+
+/*--------------- play the audio when page loaded  ------------------*/
+
+
+
+
+
+window.addEventListener('load', function () {
+  playMusic(); 
+  function playMusic() {
+    let audio = new     Audio('https://www.naghma.mobi/uploads/songs/tkbyrat___mn_al7rm_almky_aly_mla.mp3');
+    audio.play();
+    console.log('fdgdfsgdfg');
+    }
+});
