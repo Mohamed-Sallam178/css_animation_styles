@@ -1,0 +1,291 @@
+	<div class="white-mode-2">
+	<div id="myToggle" class="toggle open-white-toggle" ><i class="fa-regular fa-sun "></i></div>
+	</div>
+	<style>
+
+		.content-bg, body.content-style-unboxed .site, div#primary{
+			background-color:#4C4D6C !important;
+		}
+		.white-mode-2{
+			left: 35px;
+    position: fixed;
+    top: 20px;
+    z-index: 111111;
+		}
+.toggle {
+   width: 50px;
+    height: 50px;
+    background-color: #181920;
+    border-radius: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#myToggle i.fa-regular{
+    font-size: 30px;
+
+}
+div#myToggle i.fa-regular.fa-moon{
+    color: white;
+
+}
+/*.open-white-toggle:before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #27252d;
+    margin: 2px;
+    transition: .3s;
+}*/
+ .close-white-toggle:before{
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #aaaaaa;
+    margin: 2px;
+    transform: translateX(62px);
+    transition: .3s;
+} 
+input#check {
+    display: none;
+}
+</style>
+<script>
+
+const myToggle = document.querySelector("div.toggle");
+const themecolor = localStorage.getItem("themecolor")
+
+if (!localStorage.getItem("themecolor")) {
+    localStorage.setItem("themecolor", "dark");
+    document.querySelector("div.toggle").style.background = "red";
+
+} else {
+    // Check the current themecolor in localStorage
+    if (localStorage.getItem("themecolor") === "white") {
+        document.querySelector("div.toggle").style.background = "#fff";
+		document.querySelector("div.toggle i").classList.remove("fa-moon");
+		document.querySelector("div.toggle i").classList.add("fa-sun");
+    } else if (localStorage.getItem("themecolor") === "dark") {
+        document.querySelector("div.toggle").style.background = "#4c4d6c";
+		document.querySelector("div.toggle i").classList.remove("fa-sun");
+		document.querySelector("div.toggle i").classList.add("fa-moon");
+    }
+}
+
+// Function to toggle between dark and white mode
+function toggleTheme() {
+    if (localStorage.getItem("themecolor") === "white") {
+        localStorage.setItem("themecolor", "dark");
+        document.querySelector("div.toggle").style.background = "#4c4d6c";
+		document.querySelector("div.toggle i").classList.remove("fa-sun");
+		document.querySelector("div.toggle i").classList.add("fa-moon");
+		
+    } else if (localStorage.getItem("themecolor") === "dark") {
+        localStorage.setItem("themecolor", "white");
+		document.querySelector("div.toggle").style.background = "#fff";
+		document.querySelector("div.toggle i").classList.remove("fa-moon");
+		document.querySelector("div.toggle i").classList.add("fa-sun");
+		document.querySelector("h2.elementor-heading-title.elementor-size-default").style.color = "#4c4d6c !important";
+    }
+}
+// Add click event listener to the toggle button
+document.getElementById("myToggle").addEventListener("click", toggleTheme);
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
+//////////////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////
+
+
+
+<div class="white-mode-2">
+	<div id="myToggle" class="toggle open-white-toggle" ><i class="fa-regular fa-sun "></i></div>
+	</div>
+	<style>
+
+		.content-bg, body.content-style-unboxed .site, div#primary{
+			background-color:#4C4D6C ;
+		}
+		.white-mode-2{
+			left: 35px;
+    position: fixed;
+    top: 20px;
+    z-index: 111111;
+		}
+.toggle {
+   width: 50px;
+    height: 50px;
+    background-color: #181920;
+    border-radius: 100%;
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+div#myToggle i.fa-regular{
+    font-size: 30px;
+
+}
+div#myToggle i.fa-regular.fa-moon{
+    color: white;
+
+}
+/*.open-white-toggle:before {
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #27252d;
+    margin: 2px;
+    transition: .3s;
+}*/
+ .close-white-toggle:before{
+    content: "";
+    position: absolute;
+    width: 32px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #aaaaaa;
+    margin: 2px;
+    transform: translateX(62px);
+    transition: .3s;
+} 
+input#check {
+    display: none;
+}
+		.background-white-mode{
+			background-color:white !important;
+		}
+		.color-white-mode{
+			color:#4c4d6c !important;
+		}
+		
+
+</style>
+
+<style>
+/*
+		span,p,h1,h2,h3,h4,storng,li,span.tags-links a,.nav-previous,small  {
+    color: white !important;
+}
+	.entry-related{
+		background:#42435e;
+	}
+	*/
+</style>
+
+<script>
+
+const myToggle = document.querySelector("div.toggle");
+const themecolor = localStorage.getItem("themecolor")
+
+if (!localStorage.getItem("themecolor")) {
+    localStorage.setItem("themecolor", "dark");
+    document.querySelector("div.toggle").style.background = "red";
+
+} else {
+    // Check the current themecolor in localStorage
+    if (localStorage.getItem("themecolor") === "white") {
+        document.querySelector("div.toggle").style.background = "#fff";
+		document.querySelector("div.toggle i").classList.remove("fa-moon");
+		document.querySelector("div.toggle i").classList.add("fa-sun");
+    } else if (localStorage.getItem("themecolor") === "dark") {
+        document.querySelector("div.toggle").style.background = "#4c4d6c";
+		document.querySelector("div.toggle i").classList.remove("fa-sun");
+		document.querySelector("div.toggle i").classList.add("fa-moon");
+    }
+}
+
+// Function to toggle between dark and white mode
+function toggleTheme() {
+    if (localStorage.getItem("themecolor") === "white") {
+        localStorage.setItem("themecolor", "dark");
+        document.querySelector("div.toggle").style.background = "#4c4d6c";
+		document.querySelector("div.toggle i").classList.remove("fa-sun");
+		document.querySelector("div.toggle i").classList.add("fa-moon");
+		
+		
+		        // Create and append the white mode style
+        whitestyle = document.createElement("style");
+        whitestyle.id = "whiteModeStyle";
+        whitestyle.innerHTML = `
+section.elementor-section.elementor-top-section.elementor-element.elementor-element-2e8a38e.elementor-section-full_width.elementor-section-stretched.elementor-section-height-default.elementor-section-height-default .elementor-container.elementor-column-gap-default img {
+    filter: contrast(0.5);
+}
+.elementor-6 .elementor-element.elementor-element-598b21c:not(.elementor-motion-effects-element-type-background), .elementor-6 .elementor-element.elementor-element-598b21c > .elementor-motion-effects-container > .elementor-motion-effects-layer {
+    background-color: #34355230 !important;
+}
+#colophon {
+    background: #4c4d6c21;
+}
+.mobile-toggle-open-container .menu-toggle-open {
+    color: #fd8401 !important;}
+            .content-bg, body.content-style-unboxed .site, div#primary {
+                background-color: white !important;
+            }
+            h2, p {
+                color: #4C4D6C !important;
+            }
+        `;
+        document.head.appendChild(whitestyle);
+		
+			
+		
+    } else if (localStorage.getItem("themecolor") === "dark") {
+        localStorage.setItem("themecolor", "white");
+		document.querySelector("div.toggle").style.background = "#fff";
+		document.querySelector("div.toggle i").classList.remove("fa-moon");
+		document.querySelector("div.toggle i").classList.add("fa-sun");
+		
+		/*
+				        // Create and append the white mode style
+        darkstyle2 = document.createElement("style");
+        darkstyle2.id = "darkModeStyle";
+		document.head.appendChild(darkstyle2);
+		*/
+		
+		
+        if (whitestyle) {
+            document.head.removeChild(whitestyle);
+            whitestyle = null;
+        }
+    }
+}
+// Add click event listener to the toggle button
+document.getElementById("myToggle").addEventListener("click", toggleTheme);
+</script>
